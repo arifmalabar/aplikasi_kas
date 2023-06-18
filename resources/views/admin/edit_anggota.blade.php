@@ -27,7 +27,7 @@
                             <input type="radio" name="jenis_kelamin" {{ ($t->jenis_kelamin == "wanita") ? "checked" : "" }} value="wanita" id="input-jkp"><label for="input-jkp"> Perempuan</label>
                         </div>
                         <div class="input-form">
-                            <button type="submit" name="status" value="tambah" class="btn success large"><i class="bx bx-check"></i> Edit</button>
+                            <button type="submit" name="status" value="tambah" class="btn warning large"><i class="bx bx-check"></i> Edit</button>
                         </div>
                     </div>
                 </form>

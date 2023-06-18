@@ -23,7 +23,7 @@
                         </textarea>
                     </div>
                     <div class="input-form">
-                        <button onclick="validation()" name="status" value="tambah" class="btn success large"><i class="bx bx-check"></i> Update</button>
+                        <button onclick="validation()" name="status" value="tambah" class="btn warning large"><i class="bx bx-check"></i> Update</button>
                     </div>
                 </form>
             </div>

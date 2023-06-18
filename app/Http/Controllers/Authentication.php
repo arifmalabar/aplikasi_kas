@@ -26,8 +26,11 @@ class Authentication extends Controller
             return redirect('/login')->with('pesan', 'username atau password anda salah');
         }
     }
-    public function doLogout()
+    public function doLogout(Request $request)
     {
-
+        Auth::logout();
+        $request->session()->invalidate();
+        $request->session()->regenerateToken();
+        return redirect('/login');
     }
 }

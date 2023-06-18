@@ -18,7 +18,7 @@
             <h4>Dations ITN Malang</h4>
         </div>
         <ul>
-            <li><a href="../index.html">Home</a></li>
+            <li><a href="/">Home</a></li>
         </ul>
     </nav>
 </header>

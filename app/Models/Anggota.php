@@ -13,4 +13,8 @@ class Anggota extends Model
     protected $primaryKey = "NIM";
     public $timestamps = false;
     public $incrementing = false;
+    public function kas_anggota()
+    {
+        return $this->belongsTo(KasAnggotaModel::class, 'NIM', 'NIM');
+    }
 }

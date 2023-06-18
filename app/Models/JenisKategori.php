@@ -12,4 +12,8 @@ class JenisKategori extends Model
     protected $primaryKey = "kode_jeniskas";
     protected $fillable = ['nama_kas', 'jumlah_kas', 'keterangan'];
     public $timestamps = false;
+    public function kas_anggota()
+    {
+        return $this->belongsTo(KasAnggotaModel::class, 'kode_jeniskas', 'kode_jeniskas');
+    }
 }

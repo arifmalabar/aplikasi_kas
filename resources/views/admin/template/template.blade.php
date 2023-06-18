@@ -45,11 +45,18 @@
             </a>
         </li>
         <li>
-            <a href="/data_kas" class="{{ ($judul == "Data Kas") ? "active" : "" }}">
+            <a href="/kas_anggota" class="{{ ($judul == "Kas Anggota") ? "active" : "" }}">
                 <i class="bx bx-wallet-alt"></i>
                 <span class="links_name">Data Kas</span>
             </a>
         </li>
+        <form action="/logout" method="post">
+            @csrf
+            <button type="submit" class="{{ ($judul == "Kas Anggota") ? "active" : "" }}">
+                <i class="bx bx-wallet-alt"></i>
+                <span class="links_name">Logout</span>
+            </button>
+        </form>
     </ul>
 </div>
 <section class="home-section">

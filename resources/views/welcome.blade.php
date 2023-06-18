@@ -19,7 +19,7 @@
         <ul>
             <li><a href="index.html">Beranda</a></li>
             <li><a href="#">Anggota</a></li>
-            <li><a class="btn btn-login" href="auth/login.html">Login</a></li>
+            <li><a class="btn btn-login" href="/login">Login</a></li>
         </ul>
     </nav>
 </header>

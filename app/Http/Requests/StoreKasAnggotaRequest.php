@@ -13,7 +13,7 @@ class StoreKasAnggotaRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,7 +24,11 @@ class StoreKasAnggotaRequest extends FormRequest
     public function rules()
     {
         return [
-            //
+            'nim' => 'required',
+            'kode_jeniskas' => 'required',
+            'nominal' => 'required',
+            'tanggal_bayar' => 'required',
+            'metode' => 'required'
         ];
     }
 }
